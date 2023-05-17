@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seatwork 2</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+* {
+	text-align: center;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center th {
+	padding: 10px;
+}
+
+body {
+  background-image: url('coolart.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+
+<body><br><br>
+	<center><img src="Alamclock.png" width="300px"></center>
+	<h1>Time Convert</h1>
+	<h2>Please use this website, this was hard to make</h2>
+<center>
+<center><table border="5" cellpadding="60" width="100%"></center>
+	    <th style="background-color:#FFFFFF">Seconds
+			<p><input type="text" id="seconds"></p>
+			<input type="button" class="btn btn-warning" onClick="Sec1()" value="To Minutes">
+			<input type="button" class="btn btn-warning" onClick="Sec2()" value="To Hours">
+			<input type="button" class="btn btn-warning" onClick="Sec3()" value="To Days">
+			<br><br>
+			<center><img src="clock.jpg" width="300px"></center>
+		</th>
+		<th style="background-color:#FFFFFF">Minutes
+			<p><input type="text" id="minutes"></p>
+			<input type="button" class="btn btn-warning" onClick="Min1()" value="To Seconds">
+			<input type="button" class="btn btn-warning" onClick="Min2()" value="To Hours">
+			<input type="button" class="btn btn-warning" onClick="Min3()" value="To Days">
+			<br><br>
+			<center><img src="minutes.jpg" width="250px"></center>
+		</th>
+	</tr>
+</table>
+<center><table border="5" cellpadding="60" width="100%"></center>
+	<tr>
+		<th style="background-color:#FFFFFF">Hours
+			<p><input type="text" id="hours"></p>
+			<input type="button" class="btn btn-info" onClick="Hr1()" value="To Seconds">
+			<input type="button" class="btn btn-info" onClick="Hr2()" value="To Minutes">
+			<input type="button" class="btn btn-info" onClick="Hr3()" value="To Days">
+			<br><br>
+			<center><img src="hours.png" width="324px"></center>
+		</th>
+		<th style="background-color:#FFFFFF">Days
+			<p><input type="text" id="days"></p>
+			<input type="button" class="btn btn-info" onClick="D1()" value="To Seconds">
+			<input type="button" class="btn btn-info" onClick="D2()" value="To Minutes">
+			<input type="button" class="btn btn-info" onClick="D3()" value="To Hours">
+			<br><br>
+			<center><img src="days.jpg" width="300px"></center>
+		</th>
+	</tr>
+</center>
+</table>
+</body>
+<script>
+	function Sec1(){
+		var x, y
+		x = (document.getElementById('seconds').value);
+		y = 60;		
+		alert(x / y);
+	}
+	function Sec2(){
+		var x, y
+		x = (document.getElementById('seconds').value);
+		y = 3600;		
+		alert(x / y);
+	}
+	function Sec3(){
+		var x, y 
+		x = (document.getElementById('seconds').value);
+		y = 86400;		
+		alert(x / y);
+	}
+	function Min1(){
+		var x, y
+		x = (document.getElementById('minutes').value);
+		y = 60;		
+		alert(x * y);
+	}
+	function Min2(){
+		var x, y
+		x = (document.getElementById('minutes').value);
+		y = 60;		
+		alert(x / y);
+	}
+	function Min3(){
+		var x, y
+		x = (document.getElementById('minutes').value);
+		y = 1440;		
+		alert(x / y);
+	}
+    function Hr1(){
+		var x, y
+		x = (document.getElementById('hours').value);
+		y = 3600;		
+		alert(x * y);
+	}
+	function Hr2(){
+		var x, y
+		x = (document.getElementById('hours').value);
+		y = 60;		
+		alert(x * y);
+	}
+	function Hr3(){
+		var x, y
+		x = (document.getElementById('hours').value);
+		y = 24;		
+		alert(x / y);
+	}
+    function D1(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 86400;		
+		alert(x * y);
+	}
+	function D2(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 1440;		
+		alert(x * y);
+	}
+	function D3(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 24;		
+		alert(x * y);
+	}
+</script>
+</html>
